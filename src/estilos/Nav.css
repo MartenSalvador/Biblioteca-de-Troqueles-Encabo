@@ -1,0 +1,55 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+   background: rgb(36,115,180);
+background: linear-gradient(90deg, rgba(36,115,180,1) 0%, rgba(0,132,203,1) 50%, rgba(0,149,218,1) 100%);
+  padding: 10px 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: bold;
+  border: #3d5d7c 1px solid;
+  padding: 5px 15px;
+  border-radius: 8px;
+  background-color: #394a5b;
+}
+
+.nav a:hover {
+  background-color: #3d5d7c;
+  transition: all 0.s ease;
+
+}
+
+/* Tablet (≤768px) */
+@media (max-width: 768px) {
+  .nav {
+    gap: 10px;
+   
+  }
+}
+
+/* Celular (≤480px) */
+@media (max-width: 480px) {
+  .nav {
+     flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    max-width: none;
+  }
+
+  .nav a {
+    font-weight: 400;
+    width: 90%;
+    padding: 5px;
+    font-size: 15px;
+
+  }
+ 
+}

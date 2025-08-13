@@ -1,0 +1,45 @@
+.header {
+  background: rgb(36,115,180);
+  background: linear-gradient(90deg, rgba(36,115,180,1) 0%, rgba(0,132,203,1) 50%, rgba(0,149,218,1) 100%);
+  color: #ecf0f1;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid rgb(36,115,180);
+  width: 100%;
+  box-sizing: border-box;
+}
+.header-titulo{
+  font-size: 2em;
+  margin: 0;
+  font-weight: bold;
+}
+
+.header-logo {
+  width: 160px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+/* Tablet (≤768px) */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px;
+  }
+}
+
+/* Celular (≤480px) */
+@media (max-width: 480px) {
+  .header {
+    width: 100%;
+    max-width: none;
+  }
+
+  .header-logo {
+    width: 70px;
+  }
+
+  h1{
+    font-size: 1.5em;
+  }
+}
