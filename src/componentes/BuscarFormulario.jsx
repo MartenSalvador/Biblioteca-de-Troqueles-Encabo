@@ -2,6 +2,11 @@ import '../estilos/BuscarFormulario.css'
 
 
 function BuscarFormulario(){
+
+
+
+
+    
     return(
         <div className="container-buscar"> 
             <input

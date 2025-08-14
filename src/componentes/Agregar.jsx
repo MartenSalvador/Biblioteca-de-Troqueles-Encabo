@@ -1,5 +1,7 @@
 import '../estilos/Agregar.css';
 import React, { useState } from 'react';
+import { db } from '../firebase';
+import { collection, addDoc } from "firebase/firestore";
 
 function Agregar() {
     
@@ -21,7 +23,7 @@ function Agregar() {
         setTrapecial({ ...trapecial, [e.target.name]: e.target.value });
     };
 
-    const handleGuardar = () => {
+    const handleGuardar = async() => {
         let datos;
         if (tipoTroquel === 'rectangular') {
             datos = { tipo: 'rectangular', ...rectangular, uso, guardado };
@@ -29,8 +31,12 @@ function Agregar() {
             datos = { tipo: 'trapecial', ...trapecial, uso, guardado };
         }
 
-        // Aquí podrías enviar los datos a una API o almacenarlos localmente.
-        alert('Troquel guardado:\n' + JSON.stringify(datos, null, 2));
+        try{
+            await addDoc(collection(db, "troqueles"), datos);
+            alert ("Troquel guardado en Firebase");
+        } catch(error){
+            alert("Error al guardar: "+ error.mesage);
+        }
     };
     
 
