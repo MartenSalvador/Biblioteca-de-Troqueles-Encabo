@@ -5,8 +5,8 @@ import '../estilos/BuscarLista.css'
 
 function BuscarLista(){
     return(
-        <div>
-            lista
+        <div className="container-lista">
+            Lista de los troqueles buscados
         </div>
     );
 }

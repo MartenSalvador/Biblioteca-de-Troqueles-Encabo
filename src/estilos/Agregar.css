@@ -1,0 +1,33 @@
+
+.agregar-container{
+    background-color: #f1f1f1;
+    padding: 15px;
+}
+
+.select-buscar{
+    font-size: 15px;
+    margin: 10px;
+    width: auto;
+    padding: 5px;
+    border-radius: 6px;
+    background-color: #394a5b;
+}
+
+.select-buscar:hover{
+    background-color: #3d5d7c;
+    transition: all 0.s ease;
+}
+
+input{
+   font-size: 15px;
+    margin: 10px;
+    width: auto;
+    padding: 5px;
+    border-radius: 6px;
+    background-color: #394a5b;
+
+}
+
+label{
+    font-weight: 550;
+}
